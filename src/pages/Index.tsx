@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { QRCodeSVG } from "qrcode.react";
 import Icon from "@/components/ui/icon";
 
 const TREES = [
@@ -502,10 +503,11 @@ export default function Index() {
       {/* FOOTER */}
       <footer className="mt-16 border-t border-border bg-white/60 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-6 py-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div>
               <p className="tree-number text-muted-foreground uppercase tracking-widest mb-1">Ботанический доклад</p>
               <p className="text-sm text-muted-foreground">Реликтовые деревья — 6 видов · {new Date().getFullYear()}</p>
+              <p className="text-xs text-muted-foreground mt-1">Проект Кирилла · Биология</p>
             </div>
             <div className="flex items-center gap-6">
               {TREES.map((t, i) => (
@@ -518,6 +520,26 @@ export default function Index() {
                   {t.emoji}
                 </button>
               ))}
+            </div>
+            <div className="flex flex-col items-center gap-2">
+              <div className="bg-white p-3 rounded border border-border shadow-sm">
+                <QRCodeSVG
+                  value="https://biologia-ginkgo-magnolia--preview.poehali.dev/"
+                  size={100}
+                  fgColor="#2d5a3d"
+                  bgColor="#ffffff"
+                  level="M"
+                  imageSettings={{
+                    src: "https://cdn.poehali.dev/projects/2bc6a15c-ff0f-4708-b5c4-e8b70fa95cfb/bucket/50b375c1-c394-46a3-b44a-787bfc4747c1.png",
+                    x: undefined,
+                    y: undefined,
+                    height: 22,
+                    width: 22,
+                    excavate: true,
+                  }}
+                />
+              </div>
+              <p className="tree-number text-muted-foreground uppercase tracking-widest text-center">Открыть сайт</p>
             </div>
           </div>
         </div>
