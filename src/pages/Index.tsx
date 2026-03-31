@@ -164,7 +164,6 @@ export default function Index() {
                 className="h-14 w-14 object-contain flex-shrink-0"
               />
               <div>
-                <p className="tree-number text-muted-foreground tracking-widest uppercase">Ботанический доклад · 2024</p>
                 <h1 className="text-2xl font-bold text-foreground" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.6rem" }}>
                   Реликтовые деревья
                 </h1>
