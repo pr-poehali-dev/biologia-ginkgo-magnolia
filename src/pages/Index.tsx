@@ -156,11 +156,18 @@ export default function Index() {
       <header className="border-b border-border bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div>
-              <p className="tree-number text-muted-foreground tracking-widest uppercase">Ботанический доклад · 2024</p>
-              <h1 className="text-2xl font-bold text-foreground" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.6rem" }}>
-                Реликтовые деревья
-              </h1>
+            <div className="flex items-center gap-4">
+              <img
+                src="https://cdn.poehali.dev/projects/2bc6a15c-ff0f-4708-b5c4-e8b70fa95cfb/bucket/50b375c1-c394-46a3-b44a-787bfc4747c1.png"
+                alt="Патриарший сад — СЮН г. Владимир"
+                className="h-14 w-14 object-contain flex-shrink-0"
+              />
+              <div>
+                <p className="tree-number text-muted-foreground tracking-widest uppercase">Ботанический доклад · 2024</p>
+                <h1 className="text-2xl font-bold text-foreground" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.6rem" }}>
+                  Реликтовые деревья
+                </h1>
+              </div>
             </div>
             <div className="flex items-center gap-3">
               <div className="hidden md:flex items-center gap-2 bg-secondary rounded px-3 py-1.5">
